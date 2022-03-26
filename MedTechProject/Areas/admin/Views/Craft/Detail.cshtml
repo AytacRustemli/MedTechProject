@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Craft>
+
+@foreach (var item in Model)
+{
+
+<p>
+	<img src="@item.PhotoURL" />
+</p>
+
+
+<br />
+<a class="btn btn-danger" href="/admin/craft/delete/@item.ID">Delete</a>
+
+}

@@ -1,0 +1,22 @@
+﻿@model New
+
+
+
+
+<form method="post" enctype="multipart/form-data">
+	<div class="col-12">
+		<p>Name</p>
+		<input class="form-control mb-3" asp-for="Name" />
+		<p>SubTitle</p>
+		<input class="form-control mb-3" asp-for="SubTitle" />
+		<p>Description</p>
+		<input class="form-control mb-3" asp-for="Description" />
+		<p>Photo</p>
+		<input class="form-control mb-2" type="text" name="PhotoURL" />
+		<p>Date</p>
+		<input class="form-control mb-3" asp-for="Date" />
+		<input class="form-control mb-3" type="hidden" asp-for="ID" />
+		<input class="form-control mb-3" type="submit" value="Create"/>
+		
+	</div>
+</form>

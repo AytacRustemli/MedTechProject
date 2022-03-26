@@ -1,0 +1,17 @@
+﻿@model Patient
+
+
+
+<p>@Model.Title</p>
+<p>@Model.SubTitle</p>
+<p>@Model.Description</p>
+<p>
+	<img src="@Model.PhotoURL" />
+</p>
+
+
+<br />
+<a class="btn btn-danger" href="/admin/patient/delete/@Model.ID">Delete</a>
+
+
+

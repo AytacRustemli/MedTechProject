@@ -1,0 +1,22 @@
+﻿@model Hospital
+
+
+
+
+<form method="post" enctype="multipart/form-data">
+	<div class="col-12">
+		<p>Title</p>
+		<input class="form-control mb-3" asp-for="Title" />
+		<p>Description</p>
+		<input class="form-control mb-3" asp-for="Description" />
+		<p>Photo</p>
+		<input class="form-control mb-2" type="text" name="IconURL" />
+		<p>Count</p>
+		<input class="form-control mb-2" type="number" name="Count" value="Count" />
+		<p>Info</p>
+		<input class="form-control mb-2" type="text" name="Info" />
+		<input class="form-control mb-3" type="hidden" asp-for="ID" />
+		<input class="form-control mb-3" type="submit" value="Create"/>
+		
+	</div>
+</form>

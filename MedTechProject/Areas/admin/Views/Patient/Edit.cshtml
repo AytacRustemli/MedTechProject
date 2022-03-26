@@ -1,0 +1,22 @@
+﻿@model Patient
+
+<form method="post" enctype="multipart/form-data">
+	<div class="col-12">
+		
+		<p>Title</p>
+		<input class="form-control mb-3" asp-for="Title" />
+		<p>SubTitle</p>
+		<input class="form-control mb-3" asp-for="SubTitle" />
+		<p>Description</p>
+		<input class="form-control mb-3" asp-for="Description" />
+		<p>Photo</p>
+		<input class="form-control mb-3" name="Image"  type="file" asp-for="PhotoURL" />
+		<img class="img-fluid mb-3"  src = "@Model.PhotoURL"/>
+		<input type="hidden" name="OldPhoto" value="@Model.PhotoURL"/>
+		<input class="form-control mb-3" type="hidden" asp-for="ID" />
+		<input class="form-control mb-3" type="submit" value="Edit"/>
+		
+	</div>
+
+
+</form>

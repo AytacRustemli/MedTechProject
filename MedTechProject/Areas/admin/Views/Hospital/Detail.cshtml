@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Hospital>
+
+@foreach (var item in Model)
+{
+
+<p>@item.Title</p>
+<p>@item.Description</p>
+<p>
+	<img src="@item.IconURL" />
+</p>
+<p>@item.Count</p>
+<p>@item.Info</p>
+<br />
+<a class="btn btn-danger" href="/admin/hospital/delete/@item.ID">Delete</a>
+
+}
+

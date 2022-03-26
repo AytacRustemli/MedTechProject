@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Hospital>
+
+<form method="post" enctype="multipart/form-data">
+	<div class="col-12">
+		@foreach (var item in Model)
+		{
+			<p>Title</p>
+			<input class="form-control mb-3" name="Title" value = "@item.Title" />
+			<p>Description</p>
+			<input class="form-control mb-3" name="Description" value = "@item.Description" />
+			<p>Photo</p>
+			<input class="form-control mb-3"  type="file" name="Image" value="@item.IconURL"/>
+			<img class="img-fluid mb-3"  src = "@item.IconURL"/>
+			<input type="hidden" name="OldPhoto" value="@item.IconURL"/>	
+			<p>Count</p>
+			<input class="form-control mb-3" name="Count" value = "@item.Count" />
+			<p>Info</p>
+			<input class="form-control mb-3" name="Info" value = "@item.Info" />
+			<input class="form-control mb-3" type="hidden" name="ID" value = "@item.ID" />
+			
+		}
+		<input class="form-control mb-3" type="submit" value="Edit"/>
+		
+	</div>
+</form>

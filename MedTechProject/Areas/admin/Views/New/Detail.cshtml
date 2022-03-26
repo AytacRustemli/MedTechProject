@@ -1,0 +1,17 @@
+﻿@model IEnumerable<New>
+
+@foreach (var item in Model)
+{
+
+<p>@item.Name</p>
+<p>@item.SubTitle</p>
+<p>@item.Description</p>
+<p>
+	<img src="@item.PhotoURL" />
+</p>
+<p>@item.Date</p>
+
+<br />
+<a class="btn btn-danger" href="/admin/new/delete/@item.ID">Delete</a>
+
+}

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Quality>
+
+<form method="post" enctype="multipart/form-data">
+	<div class="col-12">
+		@foreach (var item in Model)
+		{
+			<p>Title</p>
+			<input class="form-control mb-3" name="Title" value = "@item.Title" />
+			<p>Description</p>
+			<input class="form-control mb-3" name="Description" value = "@item.Description" />
+			<p>Info</p>
+			<input class="form-control mb-3" name="Info" value = "@item.Info" />
+			<p>Photo</p>
+			<input class="form-control mb-3"  type="file" name="Image" value="@item.PhotoURL"/>
+			<img class="img-fluid mb-3"  src = "@item.PhotoURL"/>
+			<input type="hidden" name="OldPhoto" value="@item.PhotoURL"/>
+			<input class="form-control mb-3" type="hidden" name="ID" value = "@item.ID" />
+			
+		}
+		<input class="form-control mb-3" type="submit" value="Edit"/>
+		
+	</div>
+</form>

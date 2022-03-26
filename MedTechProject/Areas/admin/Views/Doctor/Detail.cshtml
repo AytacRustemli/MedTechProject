@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Doctor>
+
+@foreach (var item in Model)
+{
+
+<p>@item.Title</p>
+<p>@item.Description</p>
+<p>
+	<img src="@item.IconURL" />
+</p>
+
+<br />
+<a class="btn btn-danger" href="/admin/doctor/delete/@item.ID">Delete</a>
+
+}

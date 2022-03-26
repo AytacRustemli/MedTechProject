@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "61b443d7-9884-4269-a34e-4ce403d6f4a6": {
+      "ProjectGuid": "61b443d7-9884-4269-a34e-4ce403d6f4a6",
+      "DisplayName": "MedTechProject",
+      "ColorIndex": 0
+    },
+    "aa640c65-f8e8-4702-ad01-9b0ba954d74f": {
+      "ProjectGuid": "aa640c65-f8e8-4702-ad01-9b0ba954d74f",
+      "DisplayName": "Entities",
+      "ColorIndex": 1
+    },
+    "b44cf97c-ccef-4b13-8e9e-606ac8f59f51": {
+      "ProjectGuid": "b44cf97c-ccef-4b13-8e9e-606ac8f59f51",
+      "DisplayName": "Helper",
+      "ColorIndex": 2
+    },
+    "93a5a997-4a24-421a-971c-e1334d48c66d": {
+      "ProjectGuid": "93a5a997-4a24-421a-971c-e1334d48c66d",
+      "DisplayName": "Services",
+      "ColorIndex": 3
+    },
+    "1671c371-6974-46d4-bc47-b36347787b7a": {
+      "ProjectGuid": "1671c371-6974-46d4-bc47-b36347787b7a",
+      "DisplayName": "DataAccess",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}
